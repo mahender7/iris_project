@@ -1,0 +1,34 @@
+<!DOCTYPE html
+<html>
+	<head>
+		<title>home</title>
+	</head>
+	<body>
+<form action="{{ url_for('predict')}}" method="post">
+		<h1> Iris type prediction</h2>
+		<h3>length of SepalLengthCm </h3>
+		<input id="one" name="SepalLengthCm" type="text">
+		<h3>length of SepalwidthCm </h3>
+		<input id="two" name="SepalwidthCm" type="text">
+		<h3>length of petalLengthCm</h3>
+		<input id="three" name="petalLengthCm" type="text">
+		<h3>length of petalwidthCm</h3>
+		<input id="four" name="petalwidthCm" type="text">
+		<br><br><button id="sub" type="submit ">predict</button>
+		<input type="reset">		
+		<br><br><h3>{{ prediction_text }}<h3>
+</form>
+	</body>
+<style>
+        body {
+	    background-image:url("img_iris1.jpg");
+            background-repeat:no-repeat;
+	    background-attachment:fixed;
+	    background-size:100% 100%;
+            text-align: center;
+            padding: 0px;
+        }
+</style>
+
+
+</html>
